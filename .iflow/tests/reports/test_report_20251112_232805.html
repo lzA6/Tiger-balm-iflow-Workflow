@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>测试报告 - all_tests</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .header { background-color: #f0f0f0; padding: 20px; border-radius: 5px; }
+        .summary { margin: 20px 0; }
+        .test-result { margin: 10px 0; padding: 10px; border-left: 4px solid #ccc; }
+        .passed { border-left-color: #4CAF50; }
+        .failed { border-left-color: #f44336; }
+        .error { border-left-color: #ff9800; }
+        .skipped { border-left-color: #9e9e9e; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        .progress-bar { width: 100%; background-color: #f0f0f0; border-radius: 5px; }
+        .progress-fill { height: 20px; background-color: #4CAF50; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>测试报告 - all_tests</h1>
+        <p>开始时间: 2025-11-12 23:28:03.750785</p>
+        <p>结束时间: 2025-11-12 23:28:05.100775</p>
+        <p>总耗时: 1.35秒</p>
+    </div>
+    
+    <div class="summary">
+        <h2>测试摘要</h2>
+        <table>
+            <tr><th>总测试数</th><td>2</td></tr>
+            <tr><th>通过</th><td>0</td></tr>
+            <tr><th>失败</th><td>0</td></tr>
+            <tr><th>跳过</th><td>0</td></tr>
+            <tr><th>错误</th><td>2</td></tr>
+            <tr><th>成功率</th><td>0.0%</td></tr>
+        </table>
+        
+        <div class="progress-bar">
+            <div class="progress-fill" style="width: 0.0%"></div>
+        </div>
+    </div>
+    
+    <div class="coverage">
+        <h2>代码覆盖率</h2>
+        <table>
+            <tr><th>总覆盖率</th><td>0%</td></tr>
+            <tr><th>覆盖行数</th><td>0</td></tr>
+            <tr><th>未覆盖行数</th><td>0</td></tr>
+            <tr><th>覆盖文件数</th><td>0</td></tr>
+        </table>
+    </div>
+    
+    <div class="test-results">
+        <h2>测试结果</h2>
+        
+        <div class="test-result error">
+            <h3>test_example</h3>
+            <p>状态: error</p>
+            <p>耗时: 0.00秒</p>
+            <p>消息: </p>
+            <p>错误: expected string or bytes-like object</p>
+            <p>追踪: <pre>Traceback (most recent call last):
+  File "C:\Users\Administrator.DESKTOP-EGNE9ND\Desktop\自研全能工作流\.iflow\tests\comprehensive-testing-framework-v2.py", line 410, in _run_test_suite
+    results = await self._run_tests_sequential(suite)
+  File "C:\Users\Administrator.DESKTOP-EGNE9ND\Desktop\自研全能工作流\.iflow\tests\comprehensive-testing-framework-v2.py", line 461, in _run_tests_sequential
+    result = await self._run_single_test(test, suite)
+  File "C:\Users\Administrator.DESKTOP-EGNE9ND\Desktop\自研全能工作流\.iflow\tests\comprehensive-testing-framework-v2.py", line 571, in _run_single_test
+    security_findings = await self.security_tester.test_security(
+  File "C:\Users\Administrator.DESKTOP-EGNE9ND\Desktop\自研全能工作流\.iflow\tests\comprehensive-testing-framework-v2.py", line 225, in test_security
+    matches = re.finditer(pattern, code_content, re.IGNORECASE | re.MULTILINE)
+  File "C:\Users\Administrator.DESKTOP-EGNE9ND\AppData\Local\Programs\Python\Python310\lib\re.py", line 247, in finditer
+    return _compile(pattern, flags).finditer(string)
+TypeError: expected string or bytes-like object
+</pre></p>
+        </div>
+            
+        <div class="test-result error">
+            <h3>test_performance</h3>
+            <p>状态: error</p>
+            <p>耗时: 0.00秒</p>
+            <p>消息: </p>
+            <p>错误: expected string or bytes-like object</p>
+            <p>追踪: <pre>Traceback (most recent call last):
+  File "C:\Users\Administrator.DESKTOP-EGNE9ND\Desktop\自研全能工作流\.iflow\tests\comprehensive-testing-framework-v2.py", line 410, in _run_test_suite
+    results = await self._run_tests_sequential(suite)
+  File "C:\Users\Administrator.DESKTOP-EGNE9ND\Desktop\自研全能工作流\.iflow\tests\comprehensive-testing-framework-v2.py", line 461, in _run_tests_sequential
+    result = await self._run_single_test(test, suite)
+  File "C:\Users\Administrator.DESKTOP-EGNE9ND\Desktop\自研全能工作流\.iflow\tests\comprehensive-testing-framework-v2.py", line 571, in _run_single_test
+    security_findings = await self.security_tester.test_security(
+  File "C:\Users\Administrator.DESKTOP-EGNE9ND\Desktop\自研全能工作流\.iflow\tests\comprehensive-testing-framework-v2.py", line 225, in test_security
+    matches = re.finditer(pattern, code_content, re.IGNORECASE | re.MULTILINE)
+  File "C:\Users\Administrator.DESKTOP-EGNE9ND\AppData\Local\Programs\Python\Python310\lib\re.py", line 247, in finditer
+    return _compile(pattern, flags).finditer(string)
+TypeError: expected string or bytes-like object
+</pre></p>
+        </div>
+            
+    </div>
+</body>
+</html>
+        

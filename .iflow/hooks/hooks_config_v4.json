@@ -1,0 +1,199 @@
+{
+  "version": "4.0",
+  "description": "iFlow CLI V4 Hook配置文件",
+  "global_settings": {
+    "parallel_execution": true,
+    "timeout_seconds": 300,
+    "retry_on_failure": true,
+    "max_retries": 3,
+    "notification_enabled": true
+  },
+  "hooks": [
+    {
+      "id": "quality_check",
+      "name": "自动代码质量检查",
+      "type": "pre_commit",
+      "priority": "critical",
+      "enabled": true,
+      "async_execution": true,
+      "config": {
+        "check_syntax": true,
+        "check_style": true,
+        "check_complexity": true,
+        "auto_fix": true,
+        "min_quality_score": 8.0,
+        "file_extensions": [".py", ".js", ".ts", ".jsx", ".tsx", ".java", ".cpp", ".c", ".h"]
+      }
+    },
+    {
+      "id": "security_scan",
+      "name": "安全漏洞扫描",
+      "type": "pre_commit",
+      "priority": "critical",
+      "enabled": true,
+      "async_execution": true,
+      "config": {
+        "scan_for_vulnerabilities": true,
+        "check_hardcoded_secrets": true,
+        "check_insecure_dependencies": true,
+        "scan_for_sql_injection": true,
+        "scan_for_xss": true,
+        "allowed_severity_levels": ["high", "critical"]
+      }
+    },
+    {
+      "id": "performance_analysis",
+      "name": "性能分析",
+      "type": "pre_build",
+      "priority": "high",
+      "enabled": true,
+      "async_execution": true,
+      "config": {
+        "analyze_complexity": true,
+        "check_memory_usage": true,
+        "analyze_bottlenecks": true,
+        "benchmark_critical_functions": true,
+        "min_performance_score": 7.0
+      }
+    },
+    {
+      "id": "auto_test",
+      "name": "自动测试执行",
+      "type": "pre_push",
+      "priority": "high",
+      "enabled": true,
+      "async_execution": true,
+      "config": {
+        "run_unit_tests": true,
+        "run_integration_tests": true,
+        "test_coverage_threshold": 80,
+        "fail_on_coverage_below": true,
+        "test_timeout": 180,
+        "parallel_test_execution": true
+      }
+    },
+    {
+      "id": "doc_generation",
+      "name": "文档自动生成",
+      "type": "post_build",
+      "priority": "medium",
+      "enabled": true,
+      "async_execution": true,
+      "config": {
+        "generate_api_docs": true,
+        "generate_code_docs": true,
+        "update_readme": true,
+        "include_examples": true,
+        "output_format": ["markdown", "html"]
+      }
+    },
+    {
+      "id": "dependency_check",
+      "name": "依赖检查",
+      "type": "pre_build",
+      "priority": "medium",
+      "enabled": true,
+      "async_execution": true,
+      "config": {
+        "check_outdated": true,
+        "check_vulnerabilities": true,
+        "check_licenses": true,
+        "auto_update_minor": false,
+        "allowed_licenses": ["MIT", "Apache-2.0", "BSD-3-Clause"]
+      }
+    },
+    {
+      "id": "code_format",
+      "name": "代码格式化",
+      "type": "pre_commit",
+      "priority": "low",
+      "enabled": true,
+      "async_execution": true,
+      "config": {
+        "auto_format": true,
+        "check_format": true,
+        "format_on_save": true,
+        "line_length": 120,
+        "use_tabs": false
+      }
+    },
+    {
+      "id": "git_hooks",
+      "name": "Git集成Hook",
+      "type": "pre_commit",
+      "priority": "high",
+      "enabled": true,
+      "async_execution": false,
+      "config": {
+        "install_git_hooks": true,
+        "hook_script_path": ".git/hooks/",
+        "bypass_on_rebase": true,
+        "allow_bypass_with_flag": "--no-verify"
+      }
+    },
+    {
+      "id": "notification",
+      "name": "通知Hook",
+      "type": "post_commit",
+      "priority": "low",
+      "enabled": false,
+      "async_execution": true,
+      "config": {
+        "notify_on_failure": true,
+        "notify_on_success": false,
+        "notification_channels": ["email", "slack"],
+        "webhook_url": "",
+        "email_recipients": []
+      }
+    },
+    {
+      "id": "backup",
+      "name": "自动备份",
+      "type": "pre_push",
+      "priority": "low",
+      "enabled": false,
+      "async_execution": true,
+      "config": {
+        "backup_location": "./backups/",
+        "max_backup_count": 10,
+        "compress_backups": true,
+        "backup_database": false
+      }
+    }
+  ],
+  "hook_chains": {
+    "pre_commit_chain": [
+      "quality_check",
+      "security_scan",
+      "code_format",
+      "git_hooks"
+    ],
+    "pre_push_chain": [
+      "dependency_check",
+      "auto_test",
+      "backup"
+    ],
+    "pre_build_chain": [
+      "performance_analysis",
+      "dependency_check"
+    ],
+    "post_build_chain": [
+      "doc_generation",
+      "notification"
+    ]
+  },
+  "file_filters": {
+    "python_files": ["**/*.py"],
+    "javascript_files": ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx"],
+    "config_files": ["**/*.json", "**/*.yaml", "**/*.yml", "**/*.toml"],
+    "documentation_files": ["**/*.md", "**/*.rst", "**/*.txt"],
+    "exclude_patterns": [
+      "**/__pycache__/**",
+      "**/node_modules/**",
+      "**/.git/**",
+      "**/dist/**",
+      "**/build/**",
+      "**/.pytest_cache/**"
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+# Universal Workflow Configuration
+# Defines the behavior of the Golden Universal Expert
+
+name: "golden-universal-workflow"
+description: "A self-evolving, universal workflow orchestrated by the Golden Universal Expert."
+author: "AI Architect"
+
+# Core T-MIA Kernels
+kernels:
+  dkcm:
+    enabled: true
+    max_stream_size: 2000
+  arck:
+    enabled: true
+    rules_path: ".iflow/rules.md"
+  male:
+    enabled: true
+    learning_rate: 0.1
+  rpfv:
+    enabled: true
+    formal_verification_level: "standard" # "none", "standard", "rigorous"
+
+# Agent Fusion & Routing
+agent_fusion:
+  enabled: true
+  default_agent: "golden-universal-expert"
+  routing_strategy: "dynamic" # "dynamic" or "rule_based"
+
+# Tool & Workflow Unification
+tool_unification:
+  enabled: true
+  tool_directory: ".iflow/tools"
+  workflow_directory: ".iflow/workflows"
+
+# iflow CLI Integration
+iflow_integration:
+  hooks_enabled: true
+  hooks_directory: ".iflow/hooks"
+
+# Automated Testing Framework
+testing:
+  enabled: true
+  framework: "pytest" # "pytest", "unittest", etc.
+  coverage_target: 95
+
+# Self-Evolution Engine
+evolution_engine:
+  enabled: true
+  evolution_interval: "daily" # "daily", "weekly", "on_demand"

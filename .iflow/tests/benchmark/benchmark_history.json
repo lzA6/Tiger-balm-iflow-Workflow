@@ -1,0 +1,602 @@
+[
+  {
+    "name": "benchmark_neural_adapter_latency",
+    "value": 0.0009996891021728516,
+    "unit": "seconds",
+    "timestamp": "2025-11-13 10:29:40.625141",
+    "metadata": {
+      "iteration": 1,
+      "error": "Cannot run the event loop while another loop is running"
+    }
+  },
+  {
+    "name": "benchmark_neural_adapter_latency",
+    "value": 0.0009996891021728516,
+    "unit": "seconds",
+    "timestamp": "2025-11-13 10:29:40.669724",
+    "metadata": {
+      "iteration": 2,
+      "error": "Cannot run the event loop while another loop is running"
+    }
+  },
+  {
+    "name": "benchmark_neural_adapter_latency",
+    "value": 0.0010001659393310547,
+    "unit": "seconds",
+    "timestamp": "2025-11-13 10:29:40.717724",
+    "metadata": {
+      "iteration": 3,
+      "error": "Cannot run the event loop while another loop is running"
+    }
+  },
+  {
+    "name": "benchmark_neural_adapter_latency",
+    "value": 0.0010039806365966797,
+    "unit": "seconds",
+    "timestamp": "2025-11-13 10:29:40.766923",
+    "metadata": {
+      "iteration": 4,
+      "error": "Cannot run the event loop while another loop is running"
+    }
+  },
+  {
+    "name": "benchmark_neural_adapter_latency",
+    "value": 0.001001596450805664,
+    "unit": "seconds",
+    "timestamp": "2025-11-13 10:29:40.819917",
+    "metadata": {
+      "iteration": 5,
+      "error": "Cannot run the event loop while another loop is running"
+    }
+  },
+  {
+    "name": "benchmark_neural_adapter_latency",
+    "value": 0.0,
+    "unit": "seconds",
+    "timestamp": "2025-11-13 10:29:40.878115",
+    "metadata": {
+      "iteration": 6,
+      "error": "Cannot run the event loop while another loop is running"
+    }
+  },
+  {
+    "name": "benchmark_neural_adapter_latency",
+    "value": 0.0,
+    "unit": "seconds",
+    "timestamp": "2025-11-13 10:29:40.924116",
+    "metadata": {
+      "iteration": 7,
+      "error": "Cannot run the event loop while another loop is running"
+    }
+  },
+  {
+    "name": "benchmark_neural_adapter_latency",
+    "value": 0.000993490219116211,
+    "unit": "seconds",
+    "timestamp": "2025-11-13 10:29:40.968117",
+    "metadata": {
+      "iteration": 8,
+      "error": "Cannot run the event loop while another loop is running"
+    }
+  },
+  {
+    "name": "benchmark_neural_adapter_latency",
+    "value": 0.0010013580322265625,
+    "unit": "seconds",
+    "timestamp": "2025-11-13 10:29:41.007118",
+    "metadata": {
+      "iteration": 9,
+      "error": "Cannot run the event loop while another loop is running"
+    }
+  },
+  {
+    "name": "benchmark_neural_adapter_latency",
+    "value": 0.0,
+    "unit": "seconds",
+    "timestamp": "2025-11-13 10:29:41.041412",
+    "metadata": {
+      "iteration": 10,
+      "error": "Cannot run the event loop while another loop is running"
+    }
+  },
+  {
+    "name": "benchmark_context_manager_throughput",
+    "value": 0.0,
+    "unit": "seconds",
+    "timestamp": "2025-11-13 10:29:41.078078",
+    "metadata": {
+      "iteration": 1,
+      "error": "Cannot run the event loop while another loop is running"
+    }
+  },
+  {
+    "name": "benchmark_context_manager_throughput",
+    "value": 0.0010037422180175781,
+    "unit": "seconds",
+    "timestamp": "2025-11-13 10:29:41.111062",
+    "metadata": {
+      "iteration": 2,
+      "error": "Cannot run the event loop while another loop is running"
+    }
+  },
+  {
+    "name": "benchmark_context_manager_throughput",
+    "value": 0.0009999275207519531,
+    "unit": "seconds",
+    "timestamp": "2025-11-13 10:29:41.145058",
+    "metadata": {
+      "iteration": 3,
+      "error": "Cannot run the event loop while another loop is running"
+    }
+  },
+  {
+    "name": "benchmark_context_manager_throughput",
+    "value": 0.0,
+    "unit": "seconds",
+    "timestamp": "2025-11-13 10:29:41.180946",
+    "metadata": {
+      "iteration": 4,
+      "error": "Cannot run the event loop while another loop is running"
+    }
+  },
+  {
+    "name": "benchmark_context_manager_throughput",
+    "value": 0.0,
+    "unit": "seconds",
+    "timestamp": "2025-11-13 10:29:41.214945",
+    "metadata": {
+      "iteration": 5,
+      "error": "Cannot run the event loop while another loop is running"
+    }
+  },
+  {
+    "name": "benchmark_context_manager_throughput",
+    "value": 0.0,
+    "unit": "seconds",
+    "timestamp": "2025-11-13 10:29:41.249626",
+    "metadata": {
+      "iteration": 6,
+      "error": "Cannot run the event loop while another loop is running"
+    }
+  },
+  {
+    "name": "benchmark_context_manager_throughput",
+    "value": 0.0009920597076416016,
+    "unit": "seconds",
+    "timestamp": "2025-11-13 10:29:41.284065",
+    "metadata": {
+      "iteration": 7,
+      "error": "Cannot run the event loop while another loop is running"
+    }
+  },
+  {
+    "name": "benchmark_context_manager_throughput",
+    "value": 0.0,
+    "unit": "seconds",
+    "timestamp": "2025-11-13 10:29:41.317063",
+    "metadata": {
+      "iteration": 8,
+      "error": "Cannot run the event loop while another loop is running"
+    }
+  },
+  {
+    "name": "benchmark_context_manager_throughput",
+    "value": 0.0,
+    "unit": "seconds",
+    "timestamp": "2025-11-13 10:29:41.351066",
+    "metadata": {
+      "iteration": 9,
+      "error": "Cannot run the event loop while another loop is running"
+    }
+  },
+  {
+    "name": "benchmark_context_manager_throughput",
+    "value": 0.0,
+    "unit": "seconds",
+    "timestamp": "2025-11-13 10:29:41.386068",
+    "metadata": {
+      "iteration": 10,
+      "error": "Cannot run the event loop while another loop is running"
+    }
+  },
+  {
+    "name": "benchmark_arq_engine_performance",
+    "value": 0.0010046958923339844,
+    "unit": "seconds",
+    "timestamp": "2025-11-13 10:29:41.424072",
+    "metadata": {
+      "iteration": 1,
+      "error": "Cannot run the event loop while another loop is running"
+    }
+  },
+  {
+    "name": "benchmark_arq_engine_performance",
+    "value": 0.0010006427764892578,
+    "unit": "seconds",
+    "timestamp": "2025-11-13 10:29:41.460196",
+    "metadata": {
+      "iteration": 2,
+      "error": "Cannot run the event loop while another loop is running"
+    }
+  },
+  {
+    "name": "benchmark_arq_engine_performance",
+    "value": 0.0,
+    "unit": "seconds",
+    "timestamp": "2025-11-13 10:29:41.493316",
+    "metadata": {
+      "iteration": 3,
+      "error": "Cannot run the event loop while another loop is running"
+    }
+  },
+  {
+    "name": "benchmark_arq_engine_performance",
+    "value": 0.0010173320770263672,
+    "unit": "seconds",
+    "timestamp": "2025-11-13 10:29:41.528324",
+    "metadata": {
+      "iteration": 4,
+      "error": "Cannot run the event loop while another loop is running"
+    }
+  },
+  {
+    "name": "benchmark_arq_engine_performance",
+    "value": 0.0009980201721191406,
+    "unit": "seconds",
+    "timestamp": "2025-11-13 10:29:41.562307",
+    "metadata": {
+      "iteration": 5,
+      "error": "Cannot run the event loop while another loop is running"
+    }
+  },
+  {
+    "name": "benchmark_arq_engine_performance",
+    "value": 0.0,
+    "unit": "seconds",
+    "timestamp": "2025-11-13 10:29:41.604626",
+    "metadata": {
+      "iteration": 6,
+      "error": "Cannot run the event loop while another loop is running"
+    }
+  },
+  {
+    "name": "benchmark_arq_engine_performance",
+    "value": 0.0010044574737548828,
+    "unit": "seconds",
+    "timestamp": "2025-11-13 10:29:41.656279",
+    "metadata": {
+      "iteration": 7,
+      "error": "Cannot run the event loop while another loop is running"
+    }
+  },
+  {
+    "name": "benchmark_arq_engine_performance",
+    "value": 0.0,
+    "unit": "seconds",
+    "timestamp": "2025-11-13 10:29:41.699112",
+    "metadata": {
+      "iteration": 8,
+      "error": "Cannot run the event loop while another loop is running"
+    }
+  },
+  {
+    "name": "benchmark_arq_engine_performance",
+    "value": 0.0010001659393310547,
+    "unit": "seconds",
+    "timestamp": "2025-11-13 10:29:41.735112",
+    "metadata": {
+      "iteration": 9,
+      "error": "Cannot run the event loop while another loop is running"
+    }
+  },
+  {
+    "name": "benchmark_arq_engine_performance",
+    "value": 0.00099945068359375,
+    "unit": "seconds",
+    "timestamp": "2025-11-13 10:29:41.769111",
+    "metadata": {
+      "iteration": 10,
+      "error": "Cannot run the event loop while another loop is running"
+    }
+  },
+  {
+    "name": "benchmark_evolution_engine_speed",
+    "value": 0.001001119613647461,
+    "unit": "seconds",
+    "timestamp": "2025-11-13 10:29:41.804121",
+    "metadata": {
+      "iteration": 1,
+      "error": "Cannot run the event loop while another loop is running"
+    }
+  },
+  {
+    "name": "benchmark_evolution_engine_speed",
+    "value": 0.0,
+    "unit": "seconds",
+    "timestamp": "2025-11-13 10:29:41.843709",
+    "metadata": {
+      "iteration": 2,
+      "error": "Cannot run the event loop while another loop is running"
+    }
+  },
+  {
+    "name": "benchmark_evolution_engine_speed",
+    "value": 0.0,
+    "unit": "seconds",
+    "timestamp": "2025-11-13 10:29:41.882767",
+    "metadata": {
+      "iteration": 3,
+      "error": "Cannot run the event loop while another loop is running"
+    }
+  },
+  {
+    "name": "benchmark_evolution_engine_speed",
+    "value": 0.0,
+    "unit": "seconds",
+    "timestamp": "2025-11-13 10:29:41.920767",
+    "metadata": {
+      "iteration": 4,
+      "error": "Cannot run the event loop while another loop is running"
+    }
+  },
+  {
+    "name": "benchmark_evolution_engine_speed",
+    "value": 0.0010006427764892578,
+    "unit": "seconds",
+    "timestamp": "2025-11-13 10:29:41.956768",
+    "metadata": {
+      "iteration": 5,
+      "error": "Cannot run the event loop while another loop is running"
+    }
+  },
+  {
+    "name": "benchmark_evolution_engine_speed",
+    "value": 0.0010023117065429688,
+    "unit": "seconds",
+    "timestamp": "2025-11-13 10:29:41.993768",
+    "metadata": {
+      "iteration": 6,
+      "error": "Cannot run the event loop while another loop is running"
+    }
+  },
+  {
+    "name": "benchmark_evolution_engine_speed",
+    "value": 0.0,
+    "unit": "seconds",
+    "timestamp": "2025-11-13 10:29:42.027772",
+    "metadata": {
+      "iteration": 7,
+      "error": "Cannot run the event loop while another loop is running"
+    }
+  },
+  {
+    "name": "benchmark_evolution_engine_speed",
+    "value": 0.0,
+    "unit": "seconds",
+    "timestamp": "2025-11-13 10:29:42.060985",
+    "metadata": {
+      "iteration": 8,
+      "error": "Cannot run the event loop while another loop is running"
+    }
+  },
+  {
+    "name": "benchmark_evolution_engine_speed",
+    "value": 0.0010385513305664062,
+    "unit": "seconds",
+    "timestamp": "2025-11-13 10:29:42.094023",
+    "metadata": {
+      "iteration": 9,
+      "error": "Cannot run the event loop while another loop is running"
+    }
+  },
+  {
+    "name": "benchmark_evolution_engine_speed",
+    "value": 0.0,
+    "unit": "seconds",
+    "timestamp": "2025-11-13 10:29:42.125984",
+    "metadata": {
+      "iteration": 10,
+      "error": "Cannot run the event loop while another loop is running"
+    }
+  },
+  {
+    "name": "benchmark_system_resource_usage",
+    "value": 0.0,
+    "unit": "seconds",
+    "timestamp": "2025-11-13 10:29:42.159984",
+    "metadata": {
+      "iteration": 1,
+      "error": "Cannot run the event loop while another loop is running"
+    }
+  },
+  {
+    "name": "benchmark_system_resource_usage",
+    "value": 0.0010008811950683594,
+    "unit": "seconds",
+    "timestamp": "2025-11-13 10:29:42.193750",
+    "metadata": {
+      "iteration": 2,
+      "error": "Cannot run the event loop while another loop is running"
+    }
+  },
+  {
+    "name": "benchmark_system_resource_usage",
+    "value": 0.0,
+    "unit": "seconds",
+    "timestamp": "2025-11-13 10:29:42.225750",
+    "metadata": {
+      "iteration": 3,
+      "error": "Cannot run the event loop while another loop is running"
+    }
+  },
+  {
+    "name": "benchmark_system_resource_usage",
+    "value": 0.0,
+    "unit": "seconds",
+    "timestamp": "2025-11-13 10:29:42.257748",
+    "metadata": {
+      "iteration": 4,
+      "error": "Cannot run the event loop while another loop is running"
+    }
+  },
+  {
+    "name": "benchmark_system_resource_usage",
+    "value": 0.0010085105895996094,
+    "unit": "seconds",
+    "timestamp": "2025-11-13 10:29:42.291015",
+    "metadata": {
+      "iteration": 5,
+      "error": "Cannot run the event loop while another loop is running"
+    }
+  },
+  {
+    "name": "benchmark_system_resource_usage",
+    "value": 0.0,
+    "unit": "seconds",
+    "timestamp": "2025-11-13 10:29:42.322013",
+    "metadata": {
+      "iteration": 6,
+      "error": "Cannot run the event loop while another loop is running"
+    }
+  },
+  {
+    "name": "benchmark_system_resource_usage",
+    "value": 0.0009982585906982422,
+    "unit": "seconds",
+    "timestamp": "2025-11-13 10:29:42.354008",
+    "metadata": {
+      "iteration": 7,
+      "error": "Cannot run the event loop while another loop is running"
+    }
+  },
+  {
+    "name": "benchmark_system_resource_usage",
+    "value": 0.001016855239868164,
+    "unit": "seconds",
+    "timestamp": "2025-11-13 10:29:42.386023",
+    "metadata": {
+      "iteration": 8,
+      "error": "Cannot run the event loop while another loop is running"
+    }
+  },
+  {
+    "name": "benchmark_system_resource_usage",
+    "value": 0.001004934310913086,
+    "unit": "seconds",
+    "timestamp": "2025-11-13 10:29:42.421621",
+    "metadata": {
+      "iteration": 9,
+      "error": "Cannot run the event loop while another loop is running"
+    }
+  },
+  {
+    "name": "benchmark_system_resource_usage",
+    "value": 0.0,
+    "unit": "seconds",
+    "timestamp": "2025-11-13 10:29:42.461253",
+    "metadata": {
+      "iteration": 10,
+      "error": "Cannot run the event loop while another loop is running"
+    }
+  },
+  {
+    "name": "benchmark_concurrent_operations",
+    "value": 0.0,
+    "unit": "seconds",
+    "timestamp": "2025-11-13 10:29:42.506256",
+    "metadata": {
+      "iteration": 1,
+      "error": "Cannot run the event loop while another loop is running"
+    }
+  },
+  {
+    "name": "benchmark_concurrent_operations",
+    "value": 0.0009949207305908203,
+    "unit": "seconds",
+    "timestamp": "2025-11-13 10:29:42.546512",
+    "metadata": {
+      "iteration": 2,
+      "error": "Cannot run the event loop while another loop is running"
+    }
+  },
+  {
+    "name": "benchmark_concurrent_operations",
+    "value": 0.0010039806365966797,
+    "unit": "seconds",
+    "timestamp": "2025-11-13 10:29:42.588113",
+    "metadata": {
+      "iteration": 3,
+      "error": "Cannot run the event loop while another loop is running"
+    }
+  },
+  {
+    "name": "benchmark_concurrent_operations",
+    "value": 0.0,
+    "unit": "seconds",
+    "timestamp": "2025-11-13 10:29:42.626110",
+    "metadata": {
+      "iteration": 4,
+      "error": "Cannot run the event loop while another loop is running"
+    }
+  },
+  {
+    "name": "benchmark_concurrent_operations",
+    "value": 0.0009965896606445312,
+    "unit": "seconds",
+    "timestamp": "2025-11-13 10:29:42.661352",
+    "metadata": {
+      "iteration": 5,
+      "error": "Cannot run the event loop while another loop is running"
+    }
+  },
+  {
+    "name": "benchmark_concurrent_operations",
+    "value": 0.0,
+    "unit": "seconds",
+    "timestamp": "2025-11-13 10:29:42.693352",
+    "metadata": {
+      "iteration": 6,
+      "error": "Cannot run the event loop while another loop is running"
+    }
+  },
+  {
+    "name": "benchmark_concurrent_operations",
+    "value": 0.0010318756103515625,
+    "unit": "seconds",
+    "timestamp": "2025-11-13 10:29:42.725942",
+    "metadata": {
+      "iteration": 7,
+      "error": "Cannot run the event loop while another loop is running"
+    }
+  },
+  {
+    "name": "benchmark_concurrent_operations",
+    "value": 0.0010039806365966797,
+    "unit": "seconds",
+    "timestamp": "2025-11-13 10:29:42.757533",
+    "metadata": {
+      "iteration": 8,
+      "error": "Cannot run the event loop while another loop is running"
+    }
+  },
+  {
+    "name": "benchmark_concurrent_operations",
+    "value": 0.0,
+    "unit": "seconds",
+    "timestamp": "2025-11-13 10:29:42.789529",
+    "metadata": {
+      "iteration": 9,
+      "error": "Cannot run the event loop while another loop is running"
+    }
+  },
+  {
+    "name": "benchmark_concurrent_operations",
+    "value": 0.0010001659393310547,
+    "unit": "seconds",
+    "timestamp": "2025-11-13 10:29:42.822529",
+    "metadata": {
+      "iteration": 10,
+      "error": "Cannot run the event loop while another loop is running"
+    }
+  }
+]

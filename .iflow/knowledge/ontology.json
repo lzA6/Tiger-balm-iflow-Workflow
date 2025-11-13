@@ -1,0 +1,188 @@
+{
+  "name": "统一计算实在本体论",
+  "version": "7.0.0",
+  "description": "定义UCR中的概念、关系和属性",
+  "entities": {
+    "UnifiedComputationalReality": {
+      "description": "统一计算实在，融合概念实在和物理实在的高维信息空间",
+      "properties": {
+        "conceptual_reality": {
+          "type": "ConceptualReality",
+          "description": "概念实在，包含知识超图、动态世界模型和形式化逻辑"
+        },
+        "physical_reality": {
+          "type": "PhysicalReality",
+          "description": "物理实在，当前工作目录的文件系统"
+        },
+        "free_energy": {
+          "type": "float",
+          "range": [0, 1],
+          "description": "自由能值，系统状态的差异度量"
+        },
+        "sync_accuracy": {
+          "type": "float",
+          "range": [0, 1],
+          "description": "概念与物理实在的同步精度"
+        }
+      }
+    },
+    "Agent": {
+      "description": "数字文明体中的智能体",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Agent唯一标识符"
+        },
+        "type": {
+          "type": "AgentType",
+          "description": "Agent类型（governor, architect, engineer等）"
+        },
+        "state": {
+          "type": "AgentState",
+          "description": "Agent当前状态（idle, busy, waiting, failed）"
+        },
+        "capabilities": {
+          "type": "array",
+          "items": "Capability",
+          "description": "Agent具备的能力列表"
+        },
+        "load": {
+          "type": "float",
+          "range": [0, 1],
+          "description": "Agent当前负载"
+        }
+      }
+    },
+    "Workflow": {
+      "description": "工作流定义",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "工作流唯一标识符"
+        },
+        "states": {
+          "type": "array",
+          "items": "WorkflowState",
+          "description": "工作流状态列表"
+        },
+        "transitions": {
+          "type": "array",
+          "items": "Transition",
+          "description": "状态转换规则"
+        }
+      }
+    },
+    "Decision": {
+      "description": "决策记录",
+      "properties": {
+        "trace_id": {
+          "type": "string",
+          "description": "决策追踪ID"
+        },
+        "timestamp": {
+          "type": "datetime",
+          "description": "决策时间戳"
+        },
+        "perception": {
+          "type": "string",
+          "description": "感知到的UCR状态"
+        },
+        "belief": {
+          "type": "string",
+          "description": "内部信念状态"
+        },
+        "action_strategy": {
+          "type": "string",
+          "description": "生成的行动策略"
+        },
+        "rationale": {
+          "type": "string",
+          "description": "决策依据（宪法条款引用）"
+        }
+      }
+    },
+    "KnowledgeNode": {
+      "description": "知识超图中的节点",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "节点唯一标识符"
+        },
+        "type": {
+          "type": "NodeType",
+          "description": "节点类型（concept, relation, property）"
+        },
+        "content": {
+          "type": "string",
+          "description": "节点内容"
+        },
+        "embedding": {
+          "type": "array",
+          "items": "float",
+          "description": "向量嵌入表示"
+        },
+        "connections": {
+          "type": "array",
+          "items": "string",
+          "description": "连接的其他节点ID"
+        }
+      }
+    }
+  },
+  "relationships": {
+    "governs": {
+      "domain": "Agent",
+      "range": "Agent",
+      "description": "总督管理其他Agent"
+    },
+    "collaborates_with": {
+      "domain": "Agent",
+      "range": "Agent",
+      "description": "Agent间协作关系"
+    },
+    "belongs_to": {
+      "domain": "Agent",
+      "range": "Guild",
+      "description": "Agent所属的工会"
+    },
+    "executes": {
+      "domain": "Agent",
+      "range": "Task",
+      "description": "Agent执行任务"
+    },
+    "contains": {
+      "domain": "Workflow",
+      "range": "State",
+      "description": "工作流包含状态"
+    },
+    "transitions_to": {
+      "domain": "State",
+      "range": "State",
+      "description": "状态转换关系"
+    },
+    "connects_to": {
+      "domain": "KnowledgeNode",
+      "range": "KnowledgeNode",
+      "description": "知识节点连接关系"
+    },
+    "influences": {
+      "domain": "Decision",
+      "range": "Agent",
+      "description": "决策影响Agent"
+    }
+  },
+  "constraints": {
+    "governor_uniqueness": "系统中只能有一个总督Agent",
+    "state_machine_determinism": "工作流状态转换必须是确定性的",
+    "agent_load_limit": "Agent负载不能超过1.0",
+    "free_energy_monotonicity": "系统必须持续最小化自由能",
+    "knowledge_consistency": "知识超图必须保持一致性"
+  },
+  "axioms": {
+    "existence": "系统必须保证自身的存在和稳定",
+    "completeness": "所有系统行为必须通过形式化证明",
+    "evolution": "系统必须具备持续的进化能力",
+    "cooperation": "Agent间必须实现高效协作",
+    "transparency": "所有决策必须可追溯和可解释"
+  }
+}
